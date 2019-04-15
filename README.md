@@ -1,11 +1,5 @@
 # Biblys Cloud Analytics
 
-## Run locally
-
-```console
-NODE_ENV=production npm start
-```
-
 ## Build image
 
 ```console
