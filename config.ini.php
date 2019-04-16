@@ -1,10 +1,6 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Matomo; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-;host = "127.0.0.1"
-;username = "matomouser"
-;password = "YLNoGTpnfNWm7pCBFuUqLaGE"
-;dbname = "matomo"
 host = "bc1405-001.dbaas.ovh.net"
 username = "analytics"
 password = "***REMOVED***"
@@ -22,7 +18,6 @@ proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 salt = "b1c51d33a19757312b3012eaf50e566e"
 trusted_hosts[] = "analytics.biblys.cloud"
 noreply_email_address = "analytics@biblys.cloud"
-enable_trusted_host_check=0
 
 [mail]
 transport = "smtp"
