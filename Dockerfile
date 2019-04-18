@@ -15,3 +15,5 @@ RUN curl -o MarketingCampaignsReportingPlugin.zip \
 # Copy Matomo configuration
 COPY config.ini.php /usr/src/piwik/config/config.ini.php
 
+COPY cron /etc/cron.d/matomo-archive
+
