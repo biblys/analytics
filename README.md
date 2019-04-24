@@ -3,7 +3,7 @@
 ## Build image
 
 ```console
-docker build -t biblys-analytics:latest .
+docker build -t biblys/analytics:latest -t biblys/analytics:tag .
 ```
 
 ## Run container from image
@@ -13,5 +13,5 @@ docker run -d -p 3000:80 \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
-  biblys-analytics:latest
+  biblys/analytics:latest
 ```
