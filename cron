@@ -1,1 +1,1 @@
-5 * * * * root php /usr/src/piwik/console core:archive --url=https://analytics.biblys.cloud/ > ~/matomo-archive.log
+5 * * * * /usr/local/bin/php /var/www/html/console core:archive --url=https://analytics.biblys.cloud > ~/matomo-archive.log 2>&1
