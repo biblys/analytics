@@ -3,7 +3,7 @@ FROM matomo:latest
 MAINTAINER Clément Bourgoin
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y cron unzip
+RUN apt-get update && apt-get install -y unzip
 
 # Install marketing campaign plugin
 RUN curl -o MarketingCampaignsReportingPlugin.zip \
@@ -14,10 +14,4 @@ RUN curl -o MarketingCampaignsReportingPlugin.zip \
 
 # Copy Matomo configuration
 COPY config.ini.php /usr/src/piwik/config/config.ini.php
-
-# Add matomo archive cron task
-COPY cron /root/crontask
-RUN crontab /root/crontask
-
-CMD service cron start
 
