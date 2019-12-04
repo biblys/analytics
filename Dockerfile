@@ -1,4 +1,4 @@
-FROM matomo:latest
+FROM matomo:3.13.0
 
 MAINTAINER Clément Bourgoin
 
@@ -10,8 +10,8 @@ RUN curl -o MarketingCampaignsReportingPlugin.zip \
       https://plugins.matomo.org/api/2.0/plugins/MarketingCampaignsReporting/download/latest \
       && unzip MarketingCampaignsReportingPlugin.zip \
       && rm MarketingCampaignsReportingPlugin.zip \
-      && mv MarketingCampaignsReporting /usr/src/piwik/plugins
+      && mv MarketingCampaignsReporting /usr/src/matomo/plugins
 
 # Copy Matomo configuration
-COPY config.ini.php /usr/src/piwik/config/config.ini.php
+COPY config.ini.php /usr/src/matomo/config/config.ini.php
 
