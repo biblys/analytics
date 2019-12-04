@@ -15,3 +15,10 @@ docker run -d -p 3000:80 \
   --name analytics \
   biblys/analytics:latest
 ```
+
+## TODO
+
+- remove database credentials from repo's config file and use env var
+- docker fpm image?
+- docker alpine image?
+
