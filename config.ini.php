@@ -92,6 +92,7 @@ Plugins[] = "ProfessionalServices"
 Plugins[] = "UserId"
 Plugins[] = "CustomPiwikJs"
 Plugins[] = "MarketingCampaignsReporting"
+Plugins[] = "EnvironmentVariables"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"
