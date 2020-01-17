@@ -1,7 +1,5 @@
 FROM matomo:3.13.1
 
-MAINTAINER Clément Bourgoin
-
 # Install system dependencies
 RUN apt-get update && apt-get install -y unzip
 
