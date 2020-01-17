@@ -1,24 +1,36 @@
 # Biblys Cloud Analytics
 
-## Build image
+## Run using Docker
 
-```console
-docker build -t biblys/analytics:latest -t biblys/analytics:tag .
+Define database credentials in a .env file:
+
+```env
+MATOMO_DATABASE_HOST=
+MATOMO_DATABASE_PORT=
+MATOMO_DATABASE_USERNAME=
+MATOMO_DATABASE_PASSWORD=
+MATOMO_DATABASE_DBNAME=
 ```
 
-## Run container from image
+Then run:
 
 ```console
 docker run -d -p 3000:80 \
+  --env-file=.env \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
   biblys/analytics:latest
 ```
 
+## Build image
+
+```console
+docker build -t biblys/analytics:latest -t biblys/analytics:tag .
+```
+
 ## TODO
 
-- remove database credentials from repo's config file and use env var
-- docker fpm image?
-- docker alpine image?
+- docker matomo fpm image?
+- docker matomo alpine image?
 
