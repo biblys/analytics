@@ -13,7 +13,6 @@ proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 salt = "b1c51d33a19757312b3012eaf50e566e"
 trusted_hosts[] = "analytics.biblys.cloud"
 noreply_email_address = "analytics@biblys.cloud"
-force_ssl = 1
 
 [mail]
 transport = "smtp"
