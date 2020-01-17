@@ -17,12 +17,7 @@ force_ssl = 1
 
 [mail]
 transport = "smtp"
-port = 25
-host = "in-v3.mailjet.com"
 type = "Plain"
-username = "***REMOVED***"
-password = "***REMOVED***"
-encryption = "tls"
 
 [Plugins]
 Plugins[] = "CorePluginsAdmin"
