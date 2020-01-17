@@ -1,4 +1,4 @@
-FROM matomo:3.13.0
+FROM matomo:3.13.1
 
 MAINTAINER Clément Bourgoin
 
