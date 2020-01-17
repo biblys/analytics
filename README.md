@@ -23,12 +23,12 @@ MATOMO_GENERAL_FORCE_SSL=
 Then run:
 
 ```console
-docker run -d -p 3000:80 \
+docker run -d -p 3100:80 \
   --env-file=.env \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
-  biblys/analytics:latest
+  biblys/analytics:3.13.1
 ```
 
 ## Build image
