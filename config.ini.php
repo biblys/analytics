@@ -1,11 +1,6 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Matomo; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-host = "bc1405-001.dbaas.ovh.net"
-username = "analytics"
-password = "***REMOVED***"
-port = "35844"
-dbname = "analytics"
 tables_prefix = "matomo_"
 
 [General]
