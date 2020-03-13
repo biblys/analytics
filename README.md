@@ -28,7 +28,7 @@ docker run -d -p 3100:80 \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
-  biblys/analytics:3.13.2
+  biblys/analytics:3.13.3
 ```
 
 ## Build image
