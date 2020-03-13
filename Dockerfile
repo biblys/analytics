@@ -17,6 +17,10 @@ RUN curl -o EnvironmentVariables.zip \
       && rm EnvironmentVariables.zip \
       && mv EnvironmentVariables /usr/src/matomo/plugins
 
+# Allow to write in tmp directory
+RUN mkdir -p /var/www/html/tmp \
+      && chmod -R a+w /var/www/html/tmp
+
 # Copy Matomo configuration
 COPY config.ini.php /usr/src/matomo/config/config.ini.php
 
