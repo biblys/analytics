@@ -18,6 +18,7 @@ MATOMO_MAIL_USERNAME=
 MATOMO_MAIL_PASSWORD=
 MATOMO_MAIL_ENCRYPTION=
 MATOMO_GENERAL_FORCE_SSL=
+MATOMO_GENERAL_ENABLE_TRUSTED_HOST_CHECK=
 ```
 
 Then run:
@@ -28,7 +29,7 @@ docker run -d -p 3100:80 \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
-  biblys/analytics:3.14.0
+  biblys/analytics:3.14.0-1
 ```
 
 ## Build & push image
@@ -36,7 +37,7 @@ docker run -d -p 3100:80 \
 ```console
 docker build -t biblys/analytics:latest -t biblys/analytics:tag .
 docker push biblys/analytics:latest
-docker push biblys/analytics:3.14.0
+docker push biblys/analytics:3.14.0-1
 ```
 
 ## TODO
