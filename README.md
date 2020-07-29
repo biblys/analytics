@@ -28,13 +28,15 @@ docker run -d -p 3100:80 \
   --memory=512mb \
   --restart=unless-stopped \
   --name analytics \
-  biblys/analytics:3.13.3
+  biblys/analytics:3.14.0
 ```
 
-## Build image
+## Build & push image
 
 ```console
 docker build -t biblys/analytics:latest -t biblys/analytics:tag .
+docker push biblys/analytics:latest
+docker push biblys/analytics:3.14.0
 ```
 
 ## TODO

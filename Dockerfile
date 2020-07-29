@@ -1,4 +1,4 @@
-FROM matomo:3.13.3
+FROM matomo:3.14.0
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y unzip
@@ -10,7 +10,7 @@ RUN curl -o MarketingCampaignsReportingPlugin.zip \
       && rm MarketingCampaignsReportingPlugin.zip \
       && mv MarketingCampaignsReporting /usr/src/matomo/plugins
 
-# Install marketing campaign plugin
+# Install environment variables plugin
 RUN curl -o EnvironmentVariables.zip \
       https://plugins.matomo.org/api/2.0/plugins/EnvironmentVariables/download/latest \
       && unzip EnvironmentVariables.zip \
