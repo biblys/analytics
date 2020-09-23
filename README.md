@@ -37,7 +37,7 @@ docker run -d -p 3100:80 \
 ```console
 docker build -t biblys/analytics:latest -t biblys/analytics:3.14.1 .
 docker push biblys/analytics:latest
-docker push biblys/analytics:3.14.
+docker push biblys/analytics:3.14.1
 ```
 
 ## TODO
