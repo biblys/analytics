@@ -1,4 +1,4 @@
-FROM matomo:3.14.0
+FROM matomo:3.14.1
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y unzip
